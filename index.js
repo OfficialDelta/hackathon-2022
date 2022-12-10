@@ -358,6 +358,7 @@ afterInput(() => {
             }
             clearText()
             health = 10
+            health_degrading = false
         }
     }
 
@@ -385,7 +386,7 @@ afterInput(() => {
             }
         }
 
-        if (Date.now() >= next_health_degrade) {
+        if (health_degrading && Date.now() >= next_health_degrade) {
             health -= 1
             next_health_degrade = Date.now() + 2 * 1000
         }
