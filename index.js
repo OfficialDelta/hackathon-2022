@@ -1,3 +1,8 @@
+/*
+@title: Maze Runner
+@author: Alan Alwakeel, Samuel Sapatla, Suhaan Palakamshetty, Martin Beythoon
+*/
+
 const player = 'p'
 const enemy = 'e'
 const floor = 'f'
